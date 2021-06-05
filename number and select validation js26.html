@@ -1,0 +1,38 @@
+<html>
+<head>
+<script>
+function validate()
+{
+var x=document.myform1.num.value;
+var y=document.myform1.select1.value;
+if(isNan(x) || x<1 || x>10 )
+{
+alert("enter the number between 1 to 10");
+document.myform1.num.focus();
+return false;
+}
+else if(y=="")
+{
+alert("select is mandatory");
+document.myform1.select1.focus();
+return false;
+}
+else{
+return true;
+}
+}
+</script>
+</head>
+<body>
+<form name="myform1" action="registration.jsp" onsubmit="return validate()">
+Number:<input type="text" name="num">
+<br>
+<select name="select1">
+<option value="">Select a color</option>
+<option value="red">Red</option>
+<option value="green">Green</option>
+</select>
+<br>
+<input type="submit" value="submit">
+</body>
+</html>

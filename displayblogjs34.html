@@ -1,0 +1,33 @@
+<html>
+<head>
+<script>
+function product(id,name,description,price)
+{
+this.id=id;
+this.name=name;
+this.description=description;
+this.price=price;
+this.caluclateDisc=caluclateDisc;
+this.display=display;
+}
+function caluclateDisc(percent)
+{
+this.percent=percent;
+var x=(this.price*percent)/100;
+this.price=this.price-x;
+}
+function display()
+{
+document.write("Name"+this.name+"<br/>");
+document.write("Description"+this.description+"<br/>");
+document.write("Price after discount"+this.price+"<br/>");
+}
+var x1=new product("101","Swift","Car","100000");
+x1.caluclateDisc(30);
+x1.display();
+</script>
+</head>
+<body>
+
+</body>
+</html>

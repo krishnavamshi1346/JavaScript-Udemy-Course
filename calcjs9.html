@@ -1,0 +1,45 @@
+<html>
+<head>
+<script>
+function caluclate(x)
+{
+var a=parseInt(document.calcform.num1.value);
+var b=parseInt(document.calcform.num2.value);
+var c=document.calcform.res;
+if(x.value=="add")
+{
+c.value=a+b;
+}
+else if(x.value=="sub")
+{
+c.value=a-b;
+}
+else if(x.value=="mul")
+{
+c.value=a*b;
+}
+else if(x.value=="div")
+{
+c.value=a/b;
+}
+else if(x.value=="mod")
+{
+c.value=a%b;
+}
+
+}
+</script>
+</head>
+<body>
+<form name="calcform">
+Number 1:<input type="text" name="num1"><br/>
+Number 2:<input type="text" name="num2"><br />
+Result:<input type="text" name="res"><br/>
+<input type="button" name="Add" value="add" onclick="caluclate(this)">
+<input type="button" name="Sub" value="sub" onclick="caluclate(this)">
+<input type="button" name="Mul" value="mul" onclick="caluclate(this)">
+<input type="button" name="Div" value="div" onclick="caluclate(this)">
+<input type="button" name="Mod" value="mod" onclick="caluclate(this)">
+</form>
+</body>
+</html>

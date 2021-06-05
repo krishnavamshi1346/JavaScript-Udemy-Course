@@ -1,0 +1,17 @@
+<html>
+<head>
+<script>
+function handleonchangeEvent(x)
+{
+document.body.style.backgroundImage="url('"+x+"')";
+}
+</script>
+</head>
+<body>
+<select onchange="handleonchangeEvent(this.value)">
+<option value="">select a image</option>
+<option value="images/854553.jpg">lamborgini</option>
+<option value="images/thumb-1920-81576.jpg">Bike and Car</option>
+</select>
+</body>
+</html>

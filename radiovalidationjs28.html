@@ -1,0 +1,36 @@
+<html>
+<head>
+<script>
+function validate()
+{
+var valid=false;
+var x=document.myform.paymentmethod;
+for(var y=0;y<x.length;y++)
+{
+if(x[y].checked)
+{
+valid="true";
+break;
+}
+}
+if(valid)
+{
+return true;
+}
+else
+{
+alert("Select at least One");
+return false;
+}
+}
+</script>
+</head>
+<body>
+<form name="myform" action="register.php" onsubmit="return validate()">
+<input type="radio" id="paymentmethod" value="cod">COD
+<input type="radio" id="paymentmethod" value="debit">Debit
+<input type="radio" id="paymentmethod" value="credit">Credit
+<input type="submit" value="submit">
+</form>
+</body>
+</html>

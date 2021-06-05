@@ -1,0 +1,39 @@
+<html>
+<head>
+<script>
+function validate()
+{
+var valid=false;
+if(document.getElementById("js").checked)
+{
+valid=true;
+}
+else if(document.getElementById("react").checked)
+{
+valid=true;
+}
+else if(document.getElementById("nodejs").checked)
+{
+valid=true;
+}
+if(valid)
+{
+return true;
+}
+else
+{
+alert("Select at least One");
+return false;
+}
+}
+</script>
+</head>
+<body>
+<form name="myform" action="register.php" onsubmit="return validate()">
+<input type="checkbox" id="js" value="js">Java Script
+<input type="checkbox" id="react" value="react">React
+<input type="checkbox" id="nodejs" value="nodejs">Node js
+<input type="submit" value="submit">
+</form>
+</body>
+</html>

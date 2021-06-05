@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Grade caluclator</title>
+<script>
+function gradecalc(){
+	var maths=parseInt(prompt("Enter the maths marks"));
+	var physics=parseInt(prompt("Enter the physics marks"));
+	var chemistry=parseInt(prompt("Enter the chemistry marks"));
+	var avg=(maths+physics+chemistry)/3;
+	//var avg=total/3;
+	if(avg<70){
+		alert("Grade C");
+		}
+	else if(avg>=70 && avg<90){
+ 		alert("Grade B");
+		}
+	else if(avg>=90)
+	{
+		alert("Grade:A");
+	}
+}
+gradecalc();
+</script>
+</head>
+</html>

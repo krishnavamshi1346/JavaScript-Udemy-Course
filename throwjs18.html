@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+
+function agevalidation()
+{
+	try{
+		age=document.getElementById("age").value;
+		if(age=="")
+			{
+				throw "age cannot be empty";
+			}
+		if(age<18){
+				throw "No voting rights";
+			}
+	}catch(obj)
+		{
+			document.getElementById("errorinfo").innerHTML=obj;
+		}
+}
+</script>
+</head>
+<body>
+Age:<input type="text" id="age">
+Validate<input type="button" onclick="agevalidation()">
+<p id="errorinfo"></p>
+</body>
+</html>

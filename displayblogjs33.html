@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+function blogpost(title,text)
+{
+this.title=title;
+this.text=text;
+this.addCategory=addCategory;
+this.display=display;
+}
+function addCategory(category)
+{
+this.category=category;
+}
+function display()
+{
+document.write(this.title+"<br/>");
+document.write(this.text+"<br/>");
+}
+var x1=new blogpost("HTML","build web pages");
+var x2=new blogpost("css","make styling");
+x1.display();
+x2.display();
+</script>
+</head>
+<body>
+
+</body>
+</html>

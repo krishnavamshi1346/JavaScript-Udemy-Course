@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>
+function handle()
+{
+var x=document.myform.email.value;
+var y=document.myform.password.value;
+if(x=="")
+{
+alert("Email is mandatory");
+document.myform.email.focus();
+return false;
+}
+else if(y=="")
+{
+alert("password is mandatory");
+document.myform.password.focus();
+return false;
+}
+else{
+return true;
+}
+}
+</script>
+</head>
+<body>
+<form name="myform" action="registration.jsp" onSubmit="return handle()">
+Email:<input type="text" name="email"/>
+<br/>
+Password:<input type="password" name="password">
+<br/>
+<input type="submit" value="submit">
+</body>
+</html>

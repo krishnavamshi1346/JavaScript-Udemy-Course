@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Loops</title>
+<script>
+var n=parseInt(prompt("Enter the number"));
+for(var i=1;i<=n;i++)
+{
+if(i%3==0)
+{
+continue;
+}
+document.write("Number is"+i+"<br/>");
+}
+
+var i=1;
+while(i<=n)
+{
+if(i%3==0)
+{
+i++;
+continue;
+}
+document.write("Number is"+i+"<br/>");
+i++;
+}
+
+
+var k=1;
+do{
+if(k%3==0)
+{
+k++;
+continue;
+}
+document.write("Number is"+k+"<br/>");
+k++;
+}while(k<=n);
+</script>
+<body>
+</body>
+</head>
+</html>
+
